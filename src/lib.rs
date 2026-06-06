@@ -25,6 +25,8 @@ pub mod sha256;
 pub mod spi;
 pub mod sysctl;
 pub mod time;
+#[cfg(feature = "embassy-time-driver")]
+pub mod time_driver;
 
 /// Prelude
 pub mod prelude {
