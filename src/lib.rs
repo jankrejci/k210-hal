@@ -12,6 +12,8 @@ pub mod apu;
 pub mod cache;
 pub mod clint;
 pub mod clock;
+#[cfg(feature = "critical-section-impl")]
+mod critical_section;
 pub mod dmac;
 pub mod fft;
 pub mod fpioa;
